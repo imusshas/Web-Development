@@ -1,0 +1,4 @@
+HTML: HyperText Markup Language
+Link: A connection medium between two different websites.
+Hyperlink: A connection medium between two different components/pages of the same site.
+Form: Action stands for where do you want to send your data.
