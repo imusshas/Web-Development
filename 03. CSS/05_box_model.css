@@ -1,0 +1,16 @@
+/* Clearing browser default box model behavior */
+* /* Universal Selector */ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: #ff3500; */
+  border: 2px solid #ff3500;
+  /* padding: 20px 0; */ /* padding: vertical horizontal */
+  padding: 20px 100px 0px 10px; /* padding: top right bottom left */
+  margin: 20px;
+}

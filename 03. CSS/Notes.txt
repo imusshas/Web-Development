@@ -1,0 +1,106 @@
+CSS: Cascading Style Sheets
+UASS: User Agent Style Sheet (Default styling done by the browser)
+Structure: selector { property: value; }
+
+Units {
+  Absolute Length: The absolute length units are fixed,
+  Relative Length: {
+    definition: Relative Length specify units specify the length relative to another length property,
+    %: Relative to it's parent,
+    em: Relative to the font-size of the element,
+    rem: Relative to the font-size of the root element,
+    vw: Relative to 1% width of the visible window(viewport),
+    vh: Relative to 1% height of the visible window(viewport),
+    vmin: Relative to 1% of the viewport's smaller dimension
+  }
+}
+
+Font {
+  font-family: Look & Feel,
+}
+
+Box-Model {
+  margin [
+    element [
+      border [
+        padding [
+          content
+        ]
+      ]
+    ]
+  ]
+}
+
+CSS Selectors {
+  *(universal)-selector -> Selects everything of the page,
+  element-selector -> Selects the specific element,
+  element * selector -> Selects everything inside the element,
+  .class-selector -> Selects the element with the specified class,
+  #id-selector -> Selects the element with the specified id,
+  parent children - selector -> Selects all the children inside the parent,
+  parent > direct_children - selector -> Selects all the children inside the parent that is not nested inside other tag,
+  element + sibling - selector -> Selects the first sibling after the element,
+  element[attribute]-selector -> Selects the element with the specified attribute
+}
+
+Link Pseudo Selector {
+  :link -> Selects all the unvisited links,
+  :visited -> Selects all the visited links,
+  :hover -> Selects the link on mouse hover,
+  :active -> Selects the link on mouse click,
+  
+  Note: There must be no space between tag:pseudo-selector
+}
+
+Display Property {
+  inline -> Doesn't take width or height
+}
+
+Shadow: X, Y, Blur, Color
+
+Inheritance {
+  default: Typography,
+  forced: [layout, background-property]
+}
+
+Position {
+  static: default position one after another and can't be moved,
+  relative: the element can be moved but doesn't leave it's origin,
+  absolute: the element is moved up from it's origin and float on the relative container(first ancestor that is given position relative) to it. The element can be moved anywhere inside it's relative container. It inherits the behavior of position relative,
+  fixed: the element is positioned fixed to the browser window and can be moved anywhere inside the window. It inherits the behavior of position absolute,
+  sticky: the element is sticked to it's container
+}
+
+FlexBox {
+  Main-Axis: [
+    justify-content,
+    flex-wrap,
+    flex-grow,
+    flex-basis,
+    flex-shrink,
+    order,
+    gap
+  ],
+
+  Cross-Axis: [
+    align-items,
+    align-self
+  ]
+}
+
+Grid {
+  grid-line: [grid-column-line, grid-row-line],
+  grid-track: space between two adjacent grid-lines,
+  grid-cell: a rectangular area separated by four grid-lines,
+  grid-area: a rectangular area of more than one grid-cell; 
+}
+
+Pseudo Class [
+  There must be no space between tag::pseudo-class;
+  There must be space between tag :pseudo-class;
+
+  Note: :link, :visited, :hover, :active are pseudo selectors, not pseudo classes
+]
+
+Transform: Applies 2D or 3D transformation to an element & it allows to rotate, scale & move element.
+Animation: Animation lets an element gradually change it's style inside a keyframe. 

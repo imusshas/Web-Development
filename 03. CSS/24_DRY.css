@@ -1,0 +1,43 @@
+/* DRY: Do not repeat yourself */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BAD WAY */
+/* section.one .btn {
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  padding: 1em 2em;
+  background: #060606;
+  color: #fff;
+  cursor: pointer;
+}
+
+section.two .btn {
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  padding: 1em 2em;
+  background: #15997a;
+  color: #fff;
+  cursor: pointer;
+} */
+
+/* GOOD WAY */
+.btn {
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  padding: 1em 2em;
+  background: #060606;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: #15997a;
+}

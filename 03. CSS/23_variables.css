@@ -1,0 +1,16 @@
+:root {
+  --primary-color: white;
+  --font-size: 4rem;
+  --bg-color: #deab5f;
+  --padding: 20px;
+}
+
+h1 {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  padding: var(--padding);
+}
+
+h2 {
+  font-size: var(--font-size);
+}

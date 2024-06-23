@@ -1,0 +1,51 @@
+.container {
+  background-color: gray;
+  width: 90vw;
+  height: 500px;
+}
+
+.d {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.static {
+  background-color: aquamarine;
+  position: static;
+  left: 40px;
+}
+
+.relative {
+  background-color: red;
+  position: relative;
+  left: 200px;
+}
+
+.absolute {
+  background-color: green;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.fixed {
+  background-color: blue;
+  position: fixed;
+  top: 300px;
+  left: 200px;
+}
+
+.sticky {
+  background-color: whitesmoke;
+  position: sticky;
+  left: 50%;
+  top: 100px;
+}
+
+.right-scroll {
+  width: 200vw;
+}
+
+.scroll {
+  height: 200vh;
+}

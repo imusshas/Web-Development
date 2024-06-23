@@ -1,0 +1,24 @@
+/* Abel Font */
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+html {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 4rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+p {
+  line-height: 2;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 900;
+}

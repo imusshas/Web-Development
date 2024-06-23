@@ -1,0 +1,20 @@
+body {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+.section {
+  width: 60vw;
+  margin: 0 auto;
+  background-color: #222221;
+  padding: 4rem;
+}
+
+.section .article-title :not(.content) {
+  color: slateblue;
+}
+
+.section button:not([disabled]) {
+  padding: 1em 2em;
+}

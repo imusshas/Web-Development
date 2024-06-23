@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: #343434;
+  padding: 20px;
+  /* GRID */
+  display: grid;
+  /* grid-template-columns: 200px 200px 200px; */
+  /* grid-template-columns: repeat(3, 200px); */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: [first] 1fr [second] 1fr [third] minmax(200px, 1fr) [fourth];
+  /* grid-template-rows: 200px 200px 200px; */
+  /* grid-template-rows: repeat(3, 200px); */
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-template-rows: [first] 1fr [second] 1fr [third] 1fr [fourth];
+  grid-gap: 10px;
+}
+
+.s {
+  padding: 20px;
+  background-color: #848484;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-column: 1/3;
+  /* grid-column: first/fourth; */
+
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+  /* grid-row: 1/3; */
+}
+
+main {
+  grid-column: first/4;
+  grid-row: second/fourth;
+}
+
+aside {
+  grid-row: 1 / fourth;
+}
+
+footer {
+  grid-column: first / all;
+}
+
+.container2 {
+  height: 40vh;
+  background-color: #343434;
+  padding: 20px;
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-rows: repeat(auto-fit, 150px);
+  gap: 20px;
+}
+
+.aside {
+  grid-column-end: -1;
+}
+
+.container3 {
+  height: 100vh;
+  background-color: #343434;
+  padding: 20px;
+  border: 5px solid #fff;
+  margin: 100px;
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 20px;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.order {
+  order: 1;
+  align-self: end;
+  justify-self: end;
+}
+
+.container4 {
+  height: 100vh;
+  background-color: #343434;
+  padding: 20px;
+
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 30px;
+  grid-template-areas: "header header header" "main main main" "main main main" "main main main" "section nothing aside" "footer footer footer";
+}
+
+.size {
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+#header {
+  /* grid-column: 1/4;
+  grid-row: 1/2; */
+  grid-area: header;
+}
+
+#main {
+  /* grid-column: 1/4; */
+  grid-row: 2/5;
+  grid-area: main;
+}
+
+#section {
+  /* grid-column: 1/2; */
+  grid-area: section;
+}
+
+#aside {
+  /* grid-column: -1/-2;
+  grid-row: 5/6; */
+  grid-area: aside;
+}
+
+#footer {
+  /* grid-column: 1/4; */
+  grid-area: footer;
+}

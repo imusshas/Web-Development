@@ -1,0 +1,29 @@
+html {
+  font-size: 16px;
+}
+
+section {
+  width: 500px;
+  height: 500px;
+  background-color: #c80b0b;
+}
+
+div {
+  width: 50%;
+  height: 50%;
+  background-color: #1d9a65;
+}
+
+article {
+  font-size: 3em;
+}
+
+aside {
+  font-size: 3rem;
+}
+
+footer {
+  width: 80vw;
+  height: 20vh;
+  background-color: #222;
+}

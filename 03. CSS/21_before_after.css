@@ -1,0 +1,23 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+p::before {
+  content: "Before";
+  background-color: crimson;
+  color: snow;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+p::after {
+  content: "After";
+  background-color: crimson;
+  color: snow;
+  font-size: 1.25rem;
+  font-weight: 800;
+}

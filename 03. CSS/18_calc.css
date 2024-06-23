@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s {
+  width: calc(100px + 100px);
+  height: calc(100px - 50px);
+  background-color: crimson;
+  margin: calc(20px * 2);
+  border-radius: calc(50px / 10);
+  padding: calc(10px);
+}
