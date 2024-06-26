@@ -1,0 +1,53 @@
+.selector {
+  padding: 50px;
+  padding: 2px;
+  padding: 0.0691019017 px;
+  padding: 10 px;
+  padding: "px";
+  padding: true;
+  padding: false;
+}
+
+.selector {
+  font-family: "Roboto";
+  font-family: Arial;
+  font-family: "ROBOTO";
+  font-family: "roboto";
+  font-family: 5;
+  font-family: 3;
+  font-family: "Arial";
+  font-family: uby7y4d;
+}
+
+.selector {
+  width: 600px;
+  height: 600px;
+  background-color: #0000ff;
+  background-color: #000033;
+  background-color: #9999ff;
+  background-color: #8000ff;
+  background-color: blue;
+  background: #006699;
+}
+
+/************************ List ************************/
+.selector {
+  padding: 3;
+  padding: 10px;
+  padding: 20px 2em 30px;
+  padding: 10px, 20px, 30px, 40px, 50px, 60px;
+  padding: 20px 10px 30px 40px;
+}
+
+/************************ Maps ************************/
+.selector {
+  font-weight: 500;
+  font-weight: regular, medium, bold;
+  font-weight: 400, 500, 700;
+  font-weight: true;
+}
+
+/************************ Custom Function ************************/
+.selector {
+  height: 200px;
+}/*# sourceMappingURL=style.css.map */

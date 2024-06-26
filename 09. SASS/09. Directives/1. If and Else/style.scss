@@ -1,0 +1,39 @@
+$value: 5;
+
+p {
+  @if 1 + 1 == 2 {
+    font-size: 20px;
+  }
+
+  @if 1 + 1 == 1 {
+    background-color: #000;
+  } @else {
+    background-color: #696969;
+  }
+
+  @if $value == 1 {
+    color: #7fffd4;
+  } @else if $value >= 5 and $value <= 10 {
+    color: #b22222;
+  } @else {
+    color: #fff;
+  }
+}
+
+@mixin area($length) {
+  // width: $length + "px";   // Error
+  width: $length + px;
+  height: $length + px;
+
+  @if $length > 0 and $length < 20 {
+    background-color: #a52a2a;
+  } @else if $length >= 20 and $length < 50 {
+    background-color: #8b0000;
+  } @else {
+    background-color: #cd5c5c;
+  }
+}
+
+.selector {
+  @include area(30);
+}

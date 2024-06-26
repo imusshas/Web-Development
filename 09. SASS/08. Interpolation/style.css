@@ -1,0 +1,19 @@
+li {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  list-style: none;
+  text-align: center;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: green;
+}
+
+.three {
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */

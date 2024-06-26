@@ -1,0 +1,23 @@
+$one: red;
+$two: green;
+$three: blue;
+
+li {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  list-style: none;
+  text-align: center;
+}
+
+.#{one} {
+  background-color: $one;
+}
+
+.#{two} {
+  background-color: $two;
+}
+
+.#{three} {
+  background-color: $three;
+}

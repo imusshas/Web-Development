@@ -1,0 +1,66 @@
+// Abel Font
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+$mainColor: #c8deff;
+$mainFont: "Abel", sans-serif;
+
+$gradientFirstColor: #a5aae9cc;
+$gradientSecondColor: #8c9af6;
+
+$backgroundImageFormat: no-repeat center/cover;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  background: linear-gradient($gradientFirstColor, $gradientSecondColor);
+  display: grid;
+  grid-template-rows: repeat(2, 130px);
+  grid-template-columns: repeat(2, 320px);
+  justify-content: center;
+  align-content: center;
+  gap: 4rem;
+  font-family: $mainFont;
+}
+
+.card {
+  background-color: $mainColor;
+  line-height: 24px;
+  padding: 20px;
+  align-self: center;
+  position: relative;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  position: absolute;
+  right: -30px;
+  bottom: 85px;
+
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+}
+
+.img-one {
+  background: url("./img/one.jpg") $backgroundImageFormat;
+}
+
+.img-two {
+  background: url("./img/two.jpg") $backgroundImageFormat;
+}
+
+.img-three {
+  background: url("./img/three.jpg") $backgroundImageFormat;
+}
+
+.img-four {
+  background: url("./img/four.jpg") $backgroundImageFormat;
+}

@@ -1,0 +1,5 @@
+SASS: Syntactically Awesome Style Sheet
+
+@import: Use code of one file to another
+@mixin: Reusable CSS code
+@include: Include the mixin code

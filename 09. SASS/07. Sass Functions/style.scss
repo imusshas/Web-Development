@@ -1,0 +1,72 @@
+.selector {
+  // Math Functions
+  padding: max(10px, 20px, 30px, 2px, 50px);
+  padding: min(10px, 20px, 30px, 2px, 50px);
+  padding: random() px;
+  padding: random($limit: 10) px;
+  padding: unit($number: 10px);
+  padding: unitless($number: 10);
+  padding: unitless($number: 10px);
+}
+
+.selector {
+  // String Function
+  font-family: quote($string: "Roboto");
+  font-family: unquote($string: "Arial");
+  font-family: to-upper-case($string: "roboto");
+  font-family: to-lower-case($string: "ROBOTO");
+  font-family: str-length($string: "Arial");
+  font-family: str-index($string: "roboto", $substring: "b");
+  font-family: str-insert($string: "Aria", $insert: l, $index: 5);
+  font-family: unique-id();
+}
+
+// Color Function
+$initial-color: #0000ff;
+.selector {
+  width: 600px;
+  height: 600px;
+  background-color: $initial-color;
+  background-color: darken($color: $initial-color, $amount: 40);
+  background-color: lighten($color: $initial-color, $amount: 30);
+  background-color: adjust-hue($color: $initial-color, $degrees: 30);
+  background-color: saturate($color: $initial-color, $amount: 50);
+  background: mix($initial-color, #008080, 20);
+}
+
+/************************ List ************************/
+$list: 20px 10px 30px;
+
+.selector {
+  padding: length($list: $list);
+  padding: nth($list: $list, $n: 2);
+  padding: set-nth($list: $list, $n: 2, $value: 2em);
+  padding: join((10px 20px 30px), (40px 50px 60px), comma);
+  padding: append($list, 40px);
+}
+
+/************************ Maps ************************/
+$font-weights: (
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
+
+.selector {
+  font-weight: map-get($map: $font-weights, $key: medium);
+  font-weight: map-keys($map: $font-weights);
+  font-weight: map-values($map: $font-weights);
+  font-weight: map-has-key($map: $font-weights, $key: bold);
+}
+
+/************************ Custom Function ************************/
+$one: 100px;
+$two: 100px;
+
+@function add($num1, $num2) {
+  @return $num1 + $num2;
+}
+
+.selector {
+  height: add($one, $two);
+}

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1;
+}
+
+.flex-column-wrap-center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  min-height: 50vh;
+  background: linear-gradient(#0000002e, #000000a6),
+    url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+      no-repeat center/cover;
+  color: #fff;
+  @extend .flex-column-wrap-center;
+  gap: 1.5rem;
+  padding: 0 6rem;
+
+  p {
+    max-width: 500px;
+  }
+}
+
+.container {
+  padding: 6rem 1rem;
+  .cards {
+    @extend .flex-column-wrap-center;
+    flex-direction: row;
+    gap: 6rem;
+
+    .card {
+      max-width: 600px;
+      @extend .flex-column-wrap-center;
+      gap: 1.5rem;
+      border: 0.5px solid rgb(168, 168, 168);
+      padding: 1.5rem;
+
+      .card-img {
+        background-image: url("https://images.unsplash.com/photo-1543352634-99a5d50ae78e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+      }
+
+      .img-two {
+        @extend .card-img;
+        background-image: url("https://images.unsplash.com/photo-1657299170932-e75407883a6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+      }
+
+      .img-three {
+        @extend .card-img;
+        background-image: url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2053&q=80");
+      }
+
+      .img-four {
+        @extend .card-img;
+        background-image: url("https://images.unsplash.com/photo-1594046243098-0fceea9d451e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+      }
+    }
+
+    .card-content {
+      @extend .flex-column-wrap-center;
+      flex-direction: row;
+      justify-content: start;
+      gap: 1.5rem;
+
+      P {
+        color: #606060;
+      }
+
+      .btn-primary {
+        background-color: transparent;
+        color: #515151;
+        text-decoration: none;
+        padding: 0.6rem 1.8rem;
+        border: 0.0625rem solid #515151;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  .container {
+    padding: 6rem 1rem;
+  }
+}
