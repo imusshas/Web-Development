@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS Container & Spacing</title>
+    <style>
+      * {
+        margin: 2px;
+      }
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Margin -->
+    <!-- https://tailwindcss.com/docs/margin -->
+    <h1>1. Margin</h1>
+    <div class="m-4 bg-violet-400">Margin all around</div>
+    <div class="mx-4 bg-red-400">Margin from X axis</div>
+    <div class="my-4 bg-red-400">Margin from Y axis</div>
+    <div class="mt-4 bg-red-400">Margin from TOP</div>
+    <div class="mr-4 bg-green-400">Margin from RIGHT</div>
+    <div class="mb-4 bg-blue-400">Margin from BOTTOM</div>
+    <div class="ml-4 bg-red-400">Margin from LEFT</div>
+
+    <!-- Arbitrary Spacing -->
+    <h1>2. Arbitrary Margin</h1>
+    <div class="m-[100px] bg-lime-500">Arbitrary margin all around</div>
+
+    <!-- Padding -->
+    <!-- https://tailwindcss.com/docs/padding -->
+    <h1>3. Padding</h1>
+    <div class="p-4 bg-violet-400">Padding all around</div>
+    <div class="px-4 bg-red-400">Padding from X axis</div>
+    <div class="py-4 bg-red-400">Padding from Y axis</div>
+    <div class="pt-4 bg-red-400">Padding from TOP</div>
+    <div class="pr-4 bg-green-400">Padding from RIGHT</div>
+    <div class="pb-4 bg-blue-400">Padding from BOTTOM</div>
+    <div class="pl-4 bg-red-400">Padding from LEFT</div>
+
+    <!-- https://tailwindcss.com/docs/space -->
+    <!-- Space Between X -->
+    <h1>4. Space Between X</h1>
+    <div class="flex space-x-10">
+      <div class="p-4 bg-teal-100">01</div>
+      <div class="p-4 bg-teal-200">02</div>
+      <div class="p-4 bg-teal-300">03</div>
+    </div>
+    <!-- Space Between Y -->
+    <h1>5. Space Between Y</h1>
+    <div class="space-y-10">
+      <div class="p-4 bg-teal-100">01</div>
+      <div class="p-4 bg-teal-200">02</div>
+      <div class="p-4 bg-teal-300">03</div>
+    </div>
+  </body>
+</html>

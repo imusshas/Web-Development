@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS Sizing</title>
+  </head>
+  <body class="p-20">
+    <!-- Width -->
+    <!-- https://tailwindcss.com/docs/width -->
+    <h1>1. Width All Around in REM</h1>
+    <div class="bg-teal-100 p-5">
+      <div class="bg-red-500 m-1 w-0">0</div>
+      <div class="bg-red-500 m-1 w-1">1</div>
+      <div class="bg-red-500 m-1 w-1.5">1.5</div>
+      <div class="bg-red-500 m-1 w-2">2</div>
+      <div class="bg-red-500 m-1 w-3">3</div>
+      <div class="bg-red-500 m-1 w-4">4</div>
+      <div class="bg-red-500 m-1 w-5">5</div>
+      <div class="bg-red-500 m-1 w-6">6</div>
+      <div class="bg-red-500 m-1 w-7">7</div>
+      <div class="bg-red-500 m-1 w-8">8</div>
+      <div class="bg-red-500 m-1 w-9">9</div>
+      <div class="bg-red-500 m-1 w-10">10</div>
+      <div class="bg-red-500 m-1 w-11">11</div>
+      <div class="bg-red-500 m-1 w-12">12</div>
+      <div class="bg-red-500 m-1 w-24">24</div>
+      <div class="bg-red-500 m-1 w-32">32</div>
+      <div class="bg-red-500 m-1 w-36">36</div>
+      <div class="bg-red-500 m-1 w-40">40</div>
+      <div class="bg-red-500 m-1 w-44">44</div>
+      <div class="bg-red-500 m-1 w-48">48</div>
+      <div class="bg-red-500 m-1 w-60">60</div>
+      <div class="bg-red-500 m-1 w-80">80</div>
+      <div class="bg-red-500 m-1 w-96">96</div>
+    </div>
+
+    <!-- Percentages -->
+    <h1>2. Width All Around in Percentage</h1>
+    <div class="bg-teal-100 p-5">
+      <div class="bg-red-500 m-1 w-1/2">50%</div>
+      <div class="bg-red-500 m-1 w-1/3">33.3333%</div>
+      <div class="bg-red-500 m-1 w-1/6">16.6667%</div>
+      <div class="bg-red-500 m-1 w-2/5">40%</div>
+    </div>
+
+    <!-- Max Width -->
+    <!-- https://tailwindcss.com/docs/max-width -->
+    <h1>3. Max Width</h1>
+    <div class="bg-red-500 m-1 max-w-10">10</div>
+
+    <!-- Width of the viewport -->
+    <h1>4. Viewport Width</h1>
+    <div class="bg-green-500 mb-2 w-screen">(VW) Screen</div>
+
+    <!-- 100% of container -->
+    <h1>5. 100% of Container Width</h1>
+    <div class="max-w-80">
+      <div class="bg-green-500 mb-2 w-fill">(Width 100%) Container</div>
+    </div>
+
+    <!-- Arbitrary Width -->
+    <h1>6. Arbitrary Width</h1>
+    <div class="bg-slate-500 w-[500px]">Arbitrary Width (500px)</div>
+
+    <!-- Height (Most of the same options as widths) -->
+    <!-- https://tailwindcss.com/docs/height -->
+    <h1>7. Height All Around in REM</h1>
+    <div class="flex bg-teal-100 p-5">
+      <div class="bg-red-500 m-1 h-0">0</div>
+      <div class="bg-red-500 m-1 h-1">1</div>
+      <div class="bg-red-500 m-1 h-1.5">1.5</div>
+      <div class="bg-red-500 m-1 h-2">2</div>
+      <div class="bg-red-500 m-1 h-3">3</div>
+      <div class="bg-red-500 m-1 h-4">4</div>
+      <div class="bg-red-500 m-1 h-5">5</div>
+      <div class="bg-red-500 m-1 h-6">6</div>
+      <div class="bg-red-500 m-1 h-7">7</div>
+      <div class="bg-red-500 m-1 h-8">8</div>
+      <div class="bg-red-500 m-1 h-9">9</div>
+      <div class="bg-red-500 m-1 h-10">10</div>
+      <div class="bg-red-500 m-1 h-11">11</div>
+      <div class="bg-red-500 m-1 h-12">12</div>
+      <div class="bg-red-500 m-1 h-24">24</div>
+      <div class="bg-red-500 m-1 h-32">32</div>
+      <div class="bg-red-500 m-1 h-36">36</div>
+      <div class="bg-red-500 m-1 h-40">40</div>
+      <div class="bg-red-500 m-1 h-44">44</div>
+      <div class="bg-red-500 m-1 h-48">48</div>
+      <div class="bg-red-500 m-1 h-60">60</div>
+      <div class="bg-red-500 m-1 h-80">80</div>
+      <div class="bg-red-500 m-1 h-96">96</div>
+    </div>
+
+    <!-- Min Height -->
+    <!-- https://tailwindcss.com/docs/min-height -->
+    <h1>8. Min Height</h1>
+    <div class="bg-indigo-500 m-1 min-h-10">10</div>
+
+    <!-- Full screen height -->
+    <h1>9. Viewport Height</h1>
+    <div class="bg-indigo-500 m-1 h-screen">(VH) Screen</div>
+
+    <!-- Width Auto -->
+    <h1>10. Automatic Width &amp; Height</h1>
+    <div class="bg-indigo-500 m-1 w-auto h-auto">Auto</div>
+  </body>
+</html>

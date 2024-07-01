@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS Position & Display</title>
+  </head>
+  <body class="p-20">
+    <!-- Position -->
+    <!-- https://tailwindcss.com/docs/position -->
+    <h1>Position</h1>
+    <div class="relative bg-lime-400 w-[400px] h-[400px]">
+      Relative Parent
+      <div class="absolute left-0 bottom-0 bg-teal-400 p-10">Absolute Child</div>
+    </div>
+
+    <!-- Display -->
+    <!-- https://tailwindcss.com/docs/display -->
+    <h1>Display</h1>
+    <div class="relative bg-indigo-400 w-[400px] h-[400px]">
+      <span class="inline">1. This is display inline and will wrap normally</span>
+      <span class="inline-block">2. This is display inline and will not extend beyond it's parent</span>
+      <span class="block">3. This is display block and will move to it's own line</span>
+      <span class="hidden">4. This is display hidden and will not display at all</span>
+    </div>
+  </body>
+</html>
